@@ -56,6 +56,17 @@ package week06.coinChange;
 
 import java.util.Arrays;
 
+/*
+    零钱兑换不能用简单的贪心算法解决
+
+    抽象成动态规划有难点就是把钱币抽象为 0到amount 的数组
+    然后类比 最小路径和 即可
+
+
+
+
+
+ */
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int coinChange(int[] coins, int amount) {
