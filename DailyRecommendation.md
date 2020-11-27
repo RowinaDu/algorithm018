@@ -122,9 +122,11 @@
 
 
 39 .1126
+> 589.N叉树的前序遍历 https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/description/
 
 
 40 .1127
+> 363.矩形区域不超过 K 的最大数值和 https://leetcode-cn.com/problems/max-sum-of-rectangle-no-larger-than-k/
 
 
 41 .1128
