@@ -108,33 +108,26 @@
 35 .1122
 > 剑指 Offer 05. 替换空格  https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/
 
-
 36 .1123
 > 64.最小路径和 https://leetcode-cn.com/problems/minimum-path-sum/
-
 
 37 .1124
 > 322.零钱兑换 https://leetcode-cn.com/problems/coin-change/
 
-
 38 .1125
 > 213.打家劫舍 II https://leetcode-cn.com/problems/house-robber-ii/description/
-
 
 39 .1126
 > 589.N叉树的前序遍历 https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/description/
 
-
 40 .1127
 > 363.矩形区域不超过 K 的最大数值和 https://leetcode-cn.com/problems/max-sum-of-rectangle-no-larger-than-k/
-
 
 41 .1128
 > 33.搜索旋转排序数组 https://leetcode-cn.com/problems/search-in-rotated-sorted-array/
 
 42 .1129
 > 212.单词搜索 II https://leetcode-cn.com/problems/word-search-ii/
-
 
 43 .1130
 > 74.搜索二维矩阵 https://leetcode-cn.com/problems/search-a-2d-matrix/
@@ -145,23 +138,20 @@
 45 .1202
 > 200.岛屿数量 https://leetcode-cn.com/problems/number-of-islands/
 
-
 46 .1203
 > 53.最大子序和 https://leetcode-cn.com/problems/maximum-subarray/
-
 
 47 .1204
 > 127.单词接龙 https://leetcode-cn.com/problems/word-ladder/description/
 
-
 48 .1205
-
-
+> 15.三数之和 https://leetcode-cn.com/problems/3sum/
+ 
 49 .1206
-
+> 22.括号生成 https://leetcode-cn.com/problems/generate-parentheses/
 
 50 .1207
-
+> 547.朋友圈 https://leetcode-cn.com/problems/friend-circles/
 
 51 .1208
 
