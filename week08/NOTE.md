@@ -116,10 +116,10 @@ function insertionSort(arr) {
 
 
 
-## 希尔排序 shell sort
+## 四 希尔排序 shell sort
 1959年Shell发明，第一个突破O(n^2)的排序算法，是简单插入排序的改进版，它与插入排序的不同之处在于，他会有限比较距离较远的元素，希尔排序
 又叫缩小增量排序
-### 算法M描述
+### 算法描述
 现将整个待排序的记录序列分隔成若干序列分别进行直接插入排序，具体算法描述
 * 选择一个增量序列 t1, t2 ...tk,其中ti>tj，tk=1
 * 按增量序列个数k,对序列进行k趟排序
@@ -154,11 +154,56 @@ function shellSort(arr) {
 
 
 
+## 五 归并排序 merge sort
+归并排序是建立在归并操作上的一种有效的排序算法。改算法是采用分治法(divide and conquer)的一个非常典型的应用。将已有序列的子序列合并，得到
+完全有序的序列，即先使每个子序列有序，再使子序列段间有序。若将两个有序表合并成一个有序表，称为2-路归并。
+### 算法描述
+* 把长度为n的输入序列分为长度为n/2的子序列
+* 对这两个子序列分别采用归并排序
+* 将两个排序好的序列合并成一个最终的排序序列
 
+### 动图演示
+![](https://github.com/RowinaDu/algorithm018/blob/master/images/sort/sort_ merge_sort_2020007.gif)
 
+### 代码实现
+```javascript
 
+function mergeSort(arr) {
+    var len = arr.length;
+    if(len < 2) {
+        return arr;
+    }
+    var middle = Math.floor(len / 2),
+        left = arr.slice(0, middle),
+        right = arr.slice(middle);
+    return merge(mergeSort(left), mergeSort(right));
+}
+ 
+function merge(left, right) {
+    var result = [];
+ 
+    while(left.length>0 && right.length>0) {
+        if(left[0] <= right[0]) {
+            result.push(left.shift());
+        } else{
+            result.push(right.shift());
+        }
+    }
+ 
+    while(left.length)
+        result.push(left.shift());
+ 
+    while(right.length)
+        result.push(right.shift());
+ 
+    return result;
+}
 
+```
 
+### 算法分析
+归并排序是一种稳定的排序方法。和选择排序一样，归并排序的性能不受输入数据的影响，但表现比选择排序好的多，因为始终都是O(nlogn)的时间复杂度。
+代价是需要额外的内存空间。
 
 
 
