@@ -363,10 +363,109 @@ function countingSort(arr, maxValue) {
 算法。当k不是很大并且序列比较集中时，计数排序是很有效的排序算法。
 
 
+## 九 桶排序 bucket sort
+桶排序是计数排序的升级版。它利用了函数的映射关系，高效与否的关键就在于这个映射函数的确定。桶排序的工作原理：假设输入数据服从均匀分布，
+将数据分到有限数量的桶里，每个桶在分别排序(有可能在使用别的排序算法或者以递归方式继续使用桶排序进行排序)
+### 算法描述
+* 设置一个定量的数组作为空桶
+* 遍历输入数据，并且把数据一个一个的放到对应桶里去
+* 对每个不是空的桶进行排序
+* 从不是空的桶里把排好序的数据拼接起来
+### 图片演示
+![](https://github.com/RowinaDu/algorithm018/blob/master/images/sort/sort_bucket_sort_2020011.png)
+### 代码实现
+```javascript
+function bucketSort(arr, bucketSize) {
+    if(arr.length === 0) {
+      return arr;
+    }
+ 
+    var i;
+    var minValue = arr[0];
+    var maxValue = arr[0];
+    for(i = 1; i < arr.length; i++) {
+      if(arr[i] < minValue) {
+          minValue = arr[i];                // 输入数据的最小值
+      } else if(arr[i] > maxValue) {
+          maxValue = arr[i];                // 输入数据的最大值
+      }
+    }
+ 
+    // 桶的初始化
+    var DEFAULT_BUCKET_SIZE = 5;            // 设置桶的默认数量为5
+    bucketSize = bucketSize || DEFAULT_BUCKET_SIZE;
+    var bucketCount = Math.floor((maxValue - minValue) / bucketSize) + 1;  
+    var buckets = new Array(bucketCount);
+    for(i = 0; i < buckets.length; i++) {
+        buckets[i] = [];
+    }
+ 
+    // 利用映射函数将数据分配到各个桶中
+    for(i = 0; i < arr.length; i++) {
+        buckets[Math.floor((arr[i] - minValue) / bucketSize)].push(arr[i]);
+    }
+ 
+    arr.length = 0;
+    for(i = 0; i < buckets.length; i++) {
+        insertionSort(buckets[i]);                      // 对每个桶进行排序，这里使用了插入排序
+        for(var j  = 0; j < buckets[i].length; j++) {
+            arr.push(buckets[i][j]);                     
+        }
+    }
+ 
+    return arr;
+}
 
 
+```
+### 算法分析
+桶排序最好情况下使用线性时间O(n)，桶排序的时间复杂度取决于各个桶之间的数据进行排序的时间复杂度，因为其他部分的时间复杂度都为O(n)。
+很显然，桶划分的越小，各个桶之间的数据越少，排序所用的时间也会越少。但相应的空间消耗就会增大。
 
 
+## 十 基数排序  radix sort
+基数排序是按照低位优先排序，然后收集，再按照高位排序，然后在收集，以此类推，直到最高位。有时候有些属性是有优先级顺序的，先按低优先级排序
+再按高优先级排序。最后的次序就是最高优先级的高的在前，高优先级相同的低优先级高的在前
+### 算法描述
+* 取得数组中的最大数，并取得位数
+* arr为原始数组，从最低位开始取每个位组成radix数组
+* 对radix进行计数排序(利用计数排序适用于小范围的特点)
+### 动图演示
+![](https://github.com/RowinaDu/algorithm018/blob/master/images/sort/sort_radix_sort_2020012.gif)
+
+### 代码实现
+```javascript
+var counter = [];
+function radixSort(arr, maxDigit) {
+    var mod = 10;
+    var dev = 1;
+    for(var i = 0; i < maxDigit; i++, dev *= 10, mod *= 10) {
+        for(var j = 0; j < arr.length; j++) {
+            var bucket = parseInt((arr[j] % mod) / dev);
+            if(counter[bucket]==null) {
+                counter[bucket] = [];
+            }
+            counter[bucket].push(arr[j]);
+        }
+        var pos = 0;
+        for(var j = 0; j < counter.length; j++) {
+            var value = null;
+            if(counter[j]!=null) {
+                while((value = counter[j].shift()) != null) {
+                      arr[pos++] = value;
+                }
+          }
+        }
+    }
+    return arr;
+}
+
+```
+### 算法分析
+基数排序基于分别排序，分别收集，所以是稳定的。但基数排序的性能比桶排序要略差，每一次关键字的桶分配都要O(n)的时间复杂度，而且分配之后得到
+新的关键序列又需要O(n)的时间复杂度。假设待排序数据可以分为d个关键字，则基数排序的时间复杂度将是O(d*2n),当然d要远远小于n，因此基本上还是线性
+级别的。
+基数排序的空间复杂度为O(n+k)，其中k为桶的数量。一般来说n>>k 因此额外空间需要大概n个左右。
 
 
 
