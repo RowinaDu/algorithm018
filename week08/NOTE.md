@@ -75,6 +75,71 @@ function selectionSort(arr) {
     return arr;
 } 
 ```
+### 算法分析
+表现最稳定的排序算法之一，因为无论什么数据进去都是O(n^2)的时间复杂度，所以用到它的时候，数据规模越小越好。唯一的好处可能就是不占用额外的
+内存空间了吧。
+
+
+## 三 插入排序 insertion sort
+插入排序的算法描述是一种简单直观的排序算法。它的工作原理是通过构建有序序列对于为排序的数据，在已排序的列中从后向前扫描，找到相应位置并插入。
+### 算法概述
+一般来说，插入排序都采用 in-place 在数组上实现。具体的算法描述如下
+* 从第一个元素开始，该元素可以认为已经被排序
+* 取出下一个元素，在已经排序的元素中从后向前扫描
+* 如果该元素(已排序)大于新元素，将该元素移动下一位置
+* 重复步骤3找到找到已排序的元素小于或者等于新元素的位置
+* 将新元素插入到该位置后
+* 重复2-5
+###动图演示
+![](https://github.com/RowinaDu/algorithm018/blob/master/images/sort/sor_insertion_sor_2020005.gif)
+
+### 代码实现
+```javascript
+function insertionSort(arr) {
+    var len = arr.length;
+    var preIndex, current;
+    for(var i = 1; i < len; i++) {
+        preIndex = i - 1;
+        current = arr[i];
+        while(preIndex >= 0 && arr[preIndex] > current) {
+            arr[preIndex + 1] = arr[preIndex];
+            preIndex--;
+        }
+        arr[preIndex + 1] = current;
+    }
+    return arr;
+}
+```
+### 算法分析
+插入排序在实现上，通常采用in-place排序(即需要O(1)的额外空间的排序),因此在从后向前的扫描过程中，需要反复吧已排序元素逐步向后移动，为新元素
+提供插入空间。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
