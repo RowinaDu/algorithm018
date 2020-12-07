@@ -163,7 +163,7 @@ function shellSort(arr) {
 * 将两个排序好的序列合并成一个最终的排序序列
 
 ### 动图演示
-![](https://github.com/RowinaDu/algorithm018/blob/master/images/sort/sort_ merge_sort_2020007.gif)
+![](https://github.com/RowinaDu/algorithm018/blob/master/images/sort/sort_merge_sort_2020007.gif)
 
 ### 代码实现
 ```javascript
