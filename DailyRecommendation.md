@@ -154,9 +154,10 @@
 > 547.朋友圈 https://leetcode-cn.com/problems/friend-circles/
 
 51 .1208
-
+> 367.有效的完全平方数 https://leetcode-cn.com/problems/valid-perfect-square/
 
 52 .1209
+> 198.打家劫舍 https://leetcode-cn.com/problems/house-robber/
 
 
 53 .1210
