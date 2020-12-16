@@ -1,8 +1,8 @@
 # 字节跳动题目
 
 
-* 两数之和（亚马逊、字节跳动、谷歌、Facebook、苹果、微软在半年内面试中高频常考） https://leetcode-cn.com/problems/two-sum/
-* 合并两个有序链表（亚马逊、字节跳动在半年内面试常考） https://leetcode-cn.com/problems/merge-two-sorted-lists/
+* 1 两数之和（亚马逊、字节跳动、谷歌、Facebook、苹果、微软在半年内面试中高频常考） https://leetcode-cn.com/problems/two-sum/
+* 21 合并两个有序链表（亚马逊、字节跳动在半年内面试常考） https://leetcode-cn.com/problems/merge-two-sorted-lists/
 * 接雨水（亚马逊、字节跳动、高盛集团、Facebook 在半年内面试常考） https://leetcode.com/problems/trapping-rain-water/
 * 爬楼梯（阿里巴巴、腾讯、字节跳动在半年内面试常考） https://leetcode-cn.com/problems/climbing-stairs/
 * 最长回文子串（亚马逊、字节跳动、华为在半年内面试中常考）https://leetcode-cn.com/problems/longest-palindromic-substring/
