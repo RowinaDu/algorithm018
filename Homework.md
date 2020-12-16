@@ -148,6 +148,55 @@
 
 
 
+## 第八周
+
+简单
+* 位 1 的个数（Facebook、苹果在半年内面试中考过） https://leetcode-cn.com/problems/number-of-1-bits/
+* 2 的幂（谷歌、亚马逊、苹果在半年内面试中考过） https://leetcode-cn.com/problems/power-of-two/
+* 颠倒二进制位（苹果在半年内面试中考过） https://leetcode-cn.com/problems/reverse-bits/
+* 用自己熟悉的编程语言，手写各种初级排序代码，提交到学习总结中。
+* 数组的相对排序（谷歌在半年内面试中考过） https://leetcode-cn.com/problems/relative-sort-array/
+* 有效的字母异位词（Facebook、亚马逊、谷歌在半年内面试中考过） https://leetcode-cn.com/problems/valid-anagram/
+
+中等
+* LRU 缓存机制（亚马逊、字节跳动、Facebook、微软在半年内面试中常考） https://leetcode-cn.com/problems/lru-cache/#/
+* 力扣排行榜（Bloomberg 在半年内面试中考过） https://leetcode-cn.com/problems/design-a-leaderboard/
+* 合并区间（Facebook、字节跳动、亚马逊在半年内面试中常考） https://leetcode-cn.com/problems/merge-intervals/
+
+困难
+* N 皇后（字节跳动、亚马逊、百度在半年内面试中考过） https://leetcode-cn.com/problems/n-queens/description/
+* N 皇后 II （亚马逊在半年内面试中考过） https://leetcode-cn.com/problems/n-queens-ii/description/
+* 翻转对（字节跳动在半年内面试中考过） https://leetcode-cn.com/problems/reverse-pairs/
+
+
+
+
+
+
+## 第九周
+
+简单
+* 字符串中的第一个唯一字符（亚马逊、微软、Facebook 在半年内面试中考过） https://leetcode-cn.com/problems/first-unique-character-in-a-string/
+* 反转字符串 II （亚马逊在半年内面试中考过） https://leetcode-cn.com/problems/reverse-string-ii/
+* 翻转字符串里的单词（微软、字节跳动、苹果在半年内面试中考过） https://leetcode-cn.com/problems/reverse-words-in-a-string/
+* 反转字符串中的单词 III （微软、字节跳动、华为在半年内面试中考过） https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/
+* 仅仅反转字母（字节跳动在半年内面试中考过） https://leetcode-cn.com/problems/reverse-only-letters/
+* 同构字符串（谷歌、亚马逊、微软在半年内面试中考过） https://leetcode-cn.com/problems/isomorphic-strings/
+* 验证回文字符串 Ⅱ（Facebook 在半年内面试中常考） https://leetcode-cn.com/problems/valid-palindrome-ii/
+
+中等
+* 在学习总结中，写出不同路径 2 这道题目的状态转移方程。
+* 最长上升子序列（字节跳动、亚马逊、微软在半年内面试中考过） https://leetcode-cn.com/problems/longest-increasing-subsequence/
+* 解码方法（字节跳动、亚马逊、Facebook 在半年内面试中考过） https://leetcode-cn.com/problems/decode-ways/
+* 字符串转换整数 (atoi) （亚马逊、微软、Facebook 在半年内面试中考过） https://leetcode-cn.com/problems/decode-ways/
+* 找到字符串中所有字母异位词（Facebook 在半年内面试中常考） https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/
+* 最长回文子串（亚马逊、字节跳动、华为在半年内面试中常考）https://leetcode-cn.com/problems/longest-palindromic-substring/
+
+困难
+* 最长有效括号（亚马逊、字节跳动、华为在半年内面试中考过） https://leetcode-cn.com/problems/longest-valid-parentheses/
+* 赛车（谷歌在半年内面试中考过） https://leetcode-cn.com/problems/race-car/
+* 通配符匹配（Facebook、微软、字节跳动在半年内面试中考过） https://leetcode-cn.com/problems/wildcard-matching/
+* 不同的子序列（MathWorks 在半年内面试中考过） https://leetcode-cn.com/problems/distinct-subsequences/
 
 
 

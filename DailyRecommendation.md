@@ -161,6 +161,7 @@
 
 
 53 .1210
+> 190.颠倒二进制位 https://leetcode-cn.com/problems/reverse-bits/
 
 
 54 .1211
