@@ -197,12 +197,15 @@
 
 
 62 .1219
+> 680.验证回文字符串 Ⅱ https://leetcode-cn.com/problems/valid-palindrome-ii/
 
 
 63 .1220
+> 32.最长有效括号 https://leetcode-cn.com/problems/longest-valid-parentheses/
 
 
 64 .1221
+> 83.删除排序链表中的重复元素 https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/
 
 
 65 .1222
