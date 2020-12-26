@@ -209,18 +209,22 @@
 
 
 65 .1222
-
+> 120.三角形最小路径和 https://leetcode-cn.com/problems/triangle/
 
 66 .1223
+> 127.单词接龙 https://leetcode-cn.com/problems/word-ladder/description/
 
 
 67 .1224
+> 46.全排列 https://leetcode-cn.com/problems/permutations/
 
 
 68 .1225
+> 122.买卖股票的最佳时机 II https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/
 
 
 69 .1226
+> 238.除自身以外数组的乘积 https://leetcode-cn.com/problems/product-of-array-except-self/
 
 
 70 .1227
